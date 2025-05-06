@@ -1,10 +1,5 @@
 import { Register } from "../../../portfolio/user/Register";
 import Link from "next/link";
 export default function RegisterPage() {
-    return (
-    <>
-    <Register />
-    <Link href="/user" ><button>戻る</button></Link>
-    </>
-    );
+    return <Register />;
 }

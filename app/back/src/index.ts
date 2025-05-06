@@ -13,6 +13,7 @@ app.use(express.json());
 
 app.use('/api/hello', helloRouter);
 app.use('/api', userRouter);
+app.use('/api/register',userRouter);
 
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);

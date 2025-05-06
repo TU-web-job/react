@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useForm } from "react-hook-form";
 
 type FormValues = {
-    name: string;
+    userName: string;
     email:string;
     password:string;
 };
@@ -27,8 +27,8 @@ export function Register() {
             <h3>ユーザー登録</h3>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div>
-                <input {...register("name")} type="text" placeholder="ユーザー名" />
-                <p>{errors.name?.message}</p>
+                <input {...register("userName")} type="text" placeholder="ユーザー名" />
+                <p>{errors.userName?.message}</p>
                 </div>
                 <div>
                 <input {...register("email")} type="email" placeholder="E-mail" />

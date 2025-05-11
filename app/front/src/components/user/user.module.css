@@ -1,0 +1,71 @@
+/*　ヘッダー */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    height: 75px;
+}
+
+.headerLogo {
+    justify-content: left;
+    padding: 20px;
+}
+
+.headerMenu {
+
+    display: flex;
+    justify-content: right;
+    padding: 10px;
+}
+
+.headerList {
+    list-style:none;
+    margin-right: 10px;
+}
+
+.headerList a {
+    text-decoration: none;
+    color: rgb(115, 114, 116);
+}
+
+.headerList:hover,
+.headerList:active{
+    border-bottom: 1px solid #000;
+    background-color: #ddd;
+}
+
+/* トップ */
+
+/* register */
+.registerItem {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+/* login */
+
+/* result */
+
+/* btn */
+.btn {
+    height: 30px;
+    width: 70px;
+    border-radius: 4px;
+    border: 1.5px solid #000;
+}
+
+.btn_register {
+    background-color: blue;
+    color: #fff;
+}
+
+.btn_login {
+    background-color: rgb(221, 43, 43);
+    color: aliceblue;
+}
+
+.btn_back {
+    background-color: #ff0;
+    color: rgb(69, 70, 70);
+}

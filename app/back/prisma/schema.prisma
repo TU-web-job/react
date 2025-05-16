@@ -5,7 +5,7 @@ generator client {
 
 datasource db {
   provider = "mysql"
-  url      = env("DATABASE_URL")
+  url = env("DATABASE_URL")
 }
 
 model Users {
@@ -15,5 +15,4 @@ model Users {
   email String @unique
   address String?
   phone_number String?
-
 }

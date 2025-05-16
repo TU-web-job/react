@@ -1,12 +1,12 @@
 export type RegisterRequest = {
-    user_name: string;
-    email : string;
-    password : string;
-    address: string;
-    phone_number : string;
+    user_name: String;
+    email : String;
+    password : String;
+    address: String;
+    phone_number : String;
 }
 
 export type LoginRequest =  {
-    email : string;
-    password : string;
+    email : String;
+    password : String;
 }

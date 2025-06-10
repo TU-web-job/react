@@ -9,9 +9,34 @@ datasource db {
 
 model Users {
   id Int @id @default(autoincrement())
-  user_name String 
-  password String @unique
-  email String @unique
+  userName String @map(user_name)
+  password String @unique 
+  email String @unique 
   address String?
-  phone_number String?
+  phoneNumber String? @map(phone_number)
 }
+
+model reserveUser {
+  userId Int @id @default(autoincrement()) @map(user_id)
+  userName String @map(user_name)
+  email String @map(user_email)
+  password String 
+  phoneNumber Int? @map(user_phone)
+
+  @@map("reserve_user")
+}
+
+
+model reserveDate {
+  reserveId Int @default(autoincrement()) @map(reserve_id)
+  userId Int @map(user_id)
+  reserveDate DateTime @map(reserve_date)
+  reserveStatus Int @map(reserve_status)
+  reservePersons Int @map(reserve_persons)
+  reserveMemo String? @map(reserve_memo)
+  reserveCourse String @map(reserve_course)
+
+  @@id([reserveId, userId])
+  @@map("reserve_date")
+}
+

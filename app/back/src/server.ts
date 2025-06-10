@@ -9,6 +9,7 @@ app.use(express.json());
 
 app.use('/api', registerRouter);
 app.use('/api', loginRouter);
+app.use('api/');
 
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {

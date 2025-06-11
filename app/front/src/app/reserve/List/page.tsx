@@ -6,7 +6,6 @@ export default function List() {
     return(
         <>
         <Header />
-        <List />
         <Footer />
         </>
     );   
